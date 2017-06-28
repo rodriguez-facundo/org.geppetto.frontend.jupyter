@@ -3,6 +3,7 @@ define('jupyter_geppetto', function () {
     var jupyter_geppettoModelSync = window.parent.GEPPETTO.GeppettoJupyterModelSync;
     var jupyter_geppettoGUISync = window.parent.GEPPETTO.GeppettoJupyterGUISync;
     var jupyter_geppettoWidgetSync = window.parent.GEPPETTO.GeppettoJupyterWidgetSync;
+    var jupyter_geppettoWidgetManager = window.parent.GEPPETTO.GeppettoWidgetManager;
 
     return {
         PanelSync: jupyter_geppettoGUISync.PanelSync,
@@ -21,6 +22,8 @@ define('jupyter_geppetto', function () {
 
         WidgetSync: jupyter_geppettoWidgetSync.WidgetSync,
         PlotWidgetSync: jupyter_geppettoWidgetSync.PlotWidgetSync,
-        PopupWidgetSync: jupyter_geppettoWidgetSync.PopupWidgetSync
+        PopupWidgetSync: jupyter_geppettoWidgetSync.PopupWidgetSync,
+
+        WidgetManagerSync: jupyter_geppettoWidgetManager
     };
 });

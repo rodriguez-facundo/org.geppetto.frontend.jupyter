@@ -12,7 +12,6 @@ from jupyter_geppetto.geppetto_comm import GeppettoJupyterModelSync
 # Current variables
 sync_values = defaultdict(list)
 
-
 class ComponentSync(widgets.Widget):
     widget_id = Unicode('').tag(sync=True)
     widget_name = Unicode('').tag(sync=True)
