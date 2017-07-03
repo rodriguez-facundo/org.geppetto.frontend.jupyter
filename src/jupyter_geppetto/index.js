@@ -124,7 +124,7 @@ define(['base/js/namespace', './GeppettoJupyter', 'base/js/events'], function (J
             load_extension();
         }
         $([IPython.events]).on("notebook_loaded.Notebook", load_extension);
-		$([IPython.events]).on('finished_execute.CodeCell', run_cell)
+		$([IPython.events]).on('execute.CodeCell', run_cell);
     };
 
 	// $([IPython.events]).on("notebook_loaded.Notebook", function () {
