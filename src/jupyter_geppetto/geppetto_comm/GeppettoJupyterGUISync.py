@@ -104,7 +104,9 @@ class DropDownSync(ComponentSync):
 
 class PanelSync(ComponentSync):
     _model_name = Unicode('PanelSync').tag(sync=True)
+    _view_name = Unicode('PanelSyncView').tag(sync=True)
     _model_module = Unicode('jupyter_geppetto').tag(sync=True)
+    _view_module = Unicode('jupyter_geppetto').tag(sync=True)
 
     items = List(Instance(widgets.Widget)).tag(
         sync=True, **widgets.widget_serialization)
